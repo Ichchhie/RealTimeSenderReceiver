@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="56dp"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_padding">
+
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/general_padding">
+
+            <TextView
+                android:id="@+id/notificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Name"
+                android:textColor="@color/primaryText"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/etQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/bordered_box"
+                android:hint="Add track name"
+                android:minHeight="45dp"
+                android:padding="@dimen/layout_padding" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
